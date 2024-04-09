@@ -348,14 +348,14 @@ const exercicio18 = () => {
 const exercicio19 = () => {
   let dataNascimento = document.getElementById("data").value;
   let result = document.getElementById("resultado");
-  let error = document.getElementById("erro");
+  //let error = document.getElementById("erro");
   let data = new Date();
   let data2 = new Date(dataNascimento);
   let idade = data.getTime() - data2.getTime();
   let diferenca = Math.floor(idade / (1000 * 60 * 60 * 24 * 365.25));
 
-  error.innerHTML = "";
-  error.innerHTML = `Favor informar a data`;
+  //error.innerHTML = "";
+  //error.innerHTML = `Favor informar a data`;
 
   if (diferenca >= 18) {
     result.innerHTML = "";
@@ -386,7 +386,7 @@ const exercicio20 = () => {
 };
 
 const exercicio21 = () => {
-  let frase = document.getElementById("frase").value;
+  let frase = document.getElementById("frase").value; 
   let result = document.getElementById("resultado");
   let error = document.getElementById("erro");
   let fraseSemEspaco = frase.split(" "); // divide a frase de um array de palavras
@@ -396,7 +396,7 @@ const exercicio21 = () => {
   if (frase == "") { //== comparação
     error.innerText = "Favor informa frase";
   } else {
-    result.innerHTML = `${fraseSemEspaco.join(" ")}`;//juntas novamente as palavras
+    result.innerHTML = `${fraseSemEspaco.join(" ")}`; //grupo de codigo; juntas novamente as palavras
   }
 };
 
