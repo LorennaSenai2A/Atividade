@@ -389,14 +389,14 @@ const exercicio21 = () => {
   let frase = document.getElementById("frase").value;
   let result = document.getElementById("resultado");
   let error = document.getElementById("erro");
-  let fraseSemEspaco = frase.split(" ");
+  let fraseSemEspaco = frase.split(" "); // divide a frase de um array de palavras
   result.innerText = "";
   error.innerText = "";
 
-  if (frase == "") {
+  if (frase == "") { //== comparação
     error.innerText = "Favor informa frase";
   } else {
-    result.innerHTML = `${fraseSemEspaco.join(" ")}`;
+    result.innerHTML = `${fraseSemEspaco.join(" ")}`;//juntas novamente as palavras
   }
 };
 
