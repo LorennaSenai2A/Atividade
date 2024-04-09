@@ -386,17 +386,18 @@ const exercicio20 = () => {
 };
 
 const exercicio21 = () => {
-  let frase = document.getElementById("frase").value; 
+  let frase = document.getElementById("frase").value;
   let result = document.getElementById("resultado");
   let error = document.getElementById("erro");
   let fraseSemEspaco = frase.split(" "); // divide a frase de um array de palavras
   result.innerText = "";
   error.innerText = "";
 
-  if (frase == "") { //== comparação
+  if (frase == "") {
+    //== comparação
     error.innerText = "Favor informa frase";
   } else {
-    result.innerHTML = `${fraseSemEspaco.join(" ")}`; //grupo de codigo; juntas novamente as palavras
+    result.innerHTML = `${fraseSemEspaco.join(" ")}`; //grupo de codigo; juntar novamente as palavras
   }
 };
 
@@ -407,7 +408,7 @@ const exercicio22 = () => {
   let error = document.getElementById("erro");
 
   if (soma <= 100) {
-    soma += parseInt(num);
+    soma += parseInt(num); // ou colocar Number(num)
   }
   result.innerText = `A soma total é ${soma}`;
   error.innerHTML = `O número a cima é inválido`;
